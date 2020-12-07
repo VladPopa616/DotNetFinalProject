@@ -23,6 +23,7 @@ namespace DotNetFinalProject
         public MainWindow()
         {
             InitializeComponent();
+            //Hello bitches
         }
     }
 }
