@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:DotNetFinalProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" x:Key="button">
+            <Setter Property ="Background" Value="IndianRed"/>
+            <Setter Property ="Padding" Value="1"/>
+            <Setter Property ="BorderThickness" Value="3"/>
+            <Setter Property ="Width" Value="Auto"/>
+            <Setter Property ="Height" Value="Auto"/>
+            <Setter Property ="FontFamily" Value="Arial"/>
+            <Setter Property ="FontSize" Value="25"/>
+            <Setter Property ="FontWeight" Value="Thin"/>
+        </Style>
     </Application.Resources>
 </Application>
