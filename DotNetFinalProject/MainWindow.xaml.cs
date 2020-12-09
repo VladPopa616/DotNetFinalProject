@@ -52,5 +52,26 @@ namespace DotNetFinalProject
 
         }
 
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            addContact objDeleteContactWindow = new addContact();
+            this.Visibility = Visibility.Hidden; 
+            objDeleteContactWindow.Show();
+        }
+        
+        private void List_Click(object sender, RoutedEventArgs e)
+        {
+            ListContact objDeleteContactWindow = new ListContact();
+            this.Visibility = Visibility.Hidden;
+            objDeleteContactWindow.Show();
+        }
+        
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            updateContact objDeleteContactWindow = new updateContact();
+            this.Visibility = Visibility.Hidden;
+            objDeleteContactWindow.Show();
+        }
+        
     }
 }
