@@ -46,32 +46,10 @@ namespace DotNetFinalProject
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            //Make it in a method of its own?
-            //Add connection String
-           var connection = new SqlConnection("YourDatabaseConnectionString");
+            deleteContact objDeleteContactWindow = new deleteContact();
+            this.Visibility = Visibility.Hidden; //hidding the current window
+            objDeleteContactWindow.Show();
 
-            Console.WriteLine("Which Contact do you want to delete? (Use his/her ID)");
-            String IdChoice=Console.ReadLine();
-
-            try
-            {
-                connection.Open();
-                SqlCommand cmd = new SqlCommand("DELETE FROM Contact WHERE ContactID = @ContactID", connection);
-                cmd.Parameters.AddWithValue("@ContactID", IdChoice);
-                
-                cmd.ExecuteNonQuery();
-
-               connection.Close();
-            }
-
-            catch(SystemException ex) //Or just exception?
-            {
-                MessageBox.Show(string.Format("An error occurred: No rows were deleted", ex.Message));
-            }
-            //finally
-            //{
-
-            //}
         }
 
     }
