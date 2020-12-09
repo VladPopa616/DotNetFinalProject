@@ -61,6 +61,9 @@ namespace DotNetFinalProject
             //}
         }
 
-       
+        private void DeleteGoBck_Click(object sender, RoutedEventArgs e)
+        {
+          
+        }
     }
 }
