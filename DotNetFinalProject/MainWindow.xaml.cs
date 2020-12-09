@@ -22,8 +22,25 @@ namespace DotNetFinalProject
     {
         public MainWindow()
         {
-            InitializeComponent();
-            //Hello bitches
+            //MessageBoxResult result = MessageBox.Show("Would you like to greet the world with a \"Hello, world\"?", "My App", MessageBoxButton.YesNoCancel);
+            //switch (result)
+            //{
+            //    case MessageBoxResult.Yes:
+            //        MessageBox.Show("Hello to you too!", "My App");
+            //        break;
+            //    case MessageBoxResult.No:
+            //        MessageBox.Show("Oh well, too bad!", "My App");
+            //        break;
+            //    case MessageBoxResult.Cancel:
+            //        MessageBox.Show("Nevermind then...", "My App");
+            //        break;
+            //}
+            //MessageBox.Show("Hello!", "First MessageBox", MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
