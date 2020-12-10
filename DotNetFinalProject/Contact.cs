@@ -15,5 +15,12 @@ namespace DotNetFinalProject
         public string email { get; set; }
 
         public string phone { get; set; }
+
+        public override string ToString()
+        {
+            return fn + "," + ln + "," + email + "," + phone;
+        }
     }
+
+   
 }

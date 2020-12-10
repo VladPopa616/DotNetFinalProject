@@ -20,14 +20,27 @@ namespace DotNetFinalProject.Pages
     /// </summary>
     public partial class UpdatePage : Page
     {
+        string input;
         public UpdatePage()
         {
             InitializeComponent();
         }
 
+        private void MyTextBox_Change (object sender, TextChangedEventArgs e)
+        {
+            input = MyTextBox.Text;
+        }
+
+
         private void UpdateContact_Click (object sender, RoutedEventArgs e)
         {
+            //1. Take the text input
 
+            //2. Message Box pops up
+            MessageBox.Show( "First name: " + TextBox)
+            //3. Enter fields, if empty keep to default.
+            
+            //4. Save fields
         }
 
 
