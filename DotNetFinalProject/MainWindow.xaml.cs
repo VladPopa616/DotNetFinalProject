@@ -65,35 +65,5 @@ namespace DotNetFinalProject
             Pages.UpdatePage updatePage = new Pages.UpdatePage();
             Frame1.Navigate(updatePage);
         }
-
-        private void Delete_Click(object sender, RoutedEventArgs e)
-        {
-            deleteContact objDeleteContactWindow = new deleteContact();
-            this.Visibility = Visibility.Hidden; //hidding the current window
-            objDeleteContactWindow.Show();
-
-        }
-
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            addContact objAddContactWindow = new addContact();
-            this.Visibility = Visibility.Hidden; 
-            objAddContactWindow.Show();
-        }
-        
-        private void List_Click(object sender, RoutedEventArgs e)
-        {
-            ListContact objListContactWindow = new ListContact();
-            this.Visibility = Visibility.Hidden;
-            objListContactWindow.Show();
-        }
-        
-        private void Update_Click(object sender, RoutedEventArgs e)
-        {
-            updateContact objUpdateContactWindow = new updateContact();
-            this.Visibility = Visibility.Hidden;
-            objUpdateContactWindow.Show();
-        }
-        
     }
 }
