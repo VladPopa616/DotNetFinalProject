@@ -18,7 +18,13 @@
         <!--Labels-->
         <Label Grid.Row="0" Content="CLICK TO VIEW A CONTACT" Style="{StaticResource labelTitle}"/>
         <ScrollViewer Grid.Row="1">
-            <Button RenderSize="10,10" Content="Text"/>
+            <StackPanel>
+                <Button Content="Text"/>
+                <Button Content="Text"/>
+                <Button Content="Text"/>
+                <Button Content="Text"/>
+                
+            </StackPanel>
         </ScrollViewer>
 
         <!--Input-->
