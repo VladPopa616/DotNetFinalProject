@@ -24,5 +24,18 @@ namespace DotNetFinalProject.Pages
         {
             InitializeComponent();
         }
+
+        private void Add_Contact(object sender, RoutedEventArgs e)
+        {
+            if (Create_FirstName.Text.Equals(string.Empty) || Create_LastName.Text.Equals(string.Empty) || Create_Email.Text.Equals(string.Empty) || Create_PhoneNumber.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("You are missing a field!", "Error!", MessageBoxButton.OK);
+            }
+            else
+            {
+                Contact contact = new Contact(Create_FirstName.Text, Create_LastName.Text, Create_Email.Text, Create_PhoneNumber.Text);
+
+            }
+        }
     }
 }

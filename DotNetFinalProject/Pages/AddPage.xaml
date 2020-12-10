@@ -37,7 +37,7 @@
         <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_PhoneNumber"/>
         
         <!--Button-->
-        <Button Grid.Row="5" Grid.Column="1" Content="Submit" Style="{StaticResource button}"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="Submit" Style="{StaticResource button}" Click="Add_Contact"/>
 
     </Grid>
 </Page>
