@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
 
         <!--Labels-->
-        <Label Grid.Row="0" Grid.Column="1" Content="PLEASE FILL OUT THE FIELDS" Style="{StaticResource labelTitle}"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="ADD A CONTACT" Style="{StaticResource labelTitle}"/>
         <Label Grid.Row="1" Content="First Name:" Style="{StaticResource label}"/>
         <Label Grid.Row="2" Content="Last Name:" Style="{StaticResource label}"/>
         <Label Grid.Row="3" Content="Email:" Style="{StaticResource label}"/>
@@ -37,7 +37,7 @@
         <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_PhoneNumber"/>
         
         <!--Button-->
-        <Button Grid.Row="5" Grid.Column="1" Content="Submit" Style="{StaticResource button}"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="Submit" Style="{StaticResource button}" Click="submitCreate"/>
 
     </Grid>
 </Page>

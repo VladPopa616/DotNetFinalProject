@@ -8,7 +8,21 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ViewPage">
 
-    <Grid>
-        
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Labels-->
+        <Label Grid.Row="0" Content="CLICK TO VIEW A CONTACT" Style="{StaticResource labelTitle}"/>
+        <ScrollViewer Grid.Row="1">
+            <Button RenderSize="10,10" Content="Text"/>
+        </ScrollViewer>
+
+        <!--Input-->
+
+        <!--Button-->
     </Grid>
 </Page>
