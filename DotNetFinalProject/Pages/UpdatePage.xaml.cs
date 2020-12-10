@@ -24,5 +24,12 @@ namespace DotNetFinalProject.Pages
         {
             InitializeComponent();
         }
+
+        private void UpdateContact_Click (object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }
