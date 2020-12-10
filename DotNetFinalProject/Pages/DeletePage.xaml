@@ -8,37 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DeletePage">
 
-    <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <!--Labels-->
-        <Label Grid.Row="0" Grid.Column="1" Content="DELETE CONTACT" Style="{StaticResource labelTitle}"/>
-        <Label Grid.Row="1" Content="First Name:" Style="{StaticResource label}"/>
-        <Label Grid.Row="2" Content="Last Name:" Style="{StaticResource label}"/>
-        <Label Grid.Row="3" Content="Email:" Style="{StaticResource label}"/>
-        <Label Grid.Row="4" Content="Phone Number:" Style="{StaticResource label}"/>
-
-        <!--Input-->
-        <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_FirstName"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_LastName"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_Email"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBox}" x:Name="Create_PhoneNumber"/>
-
-        <!--Button-->
-        <Button Grid.Row="5" Grid.Column="1" Content="Submit" Style="{StaticResource button}" Click="submitCreate"/>
-
-
+    <Grid>
+        
     </Grid>
 </Page>
