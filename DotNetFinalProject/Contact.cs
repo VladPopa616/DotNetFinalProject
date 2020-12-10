@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DotNetFinalProject
 {
-    class Contact
+    public class Contact
     {
         public int ID { get; set; }
         public string fn { get; set; }
@@ -14,5 +14,12 @@ namespace DotNetFinalProject
         public string email { get; set; }
 
         public string phone { get; set; }
+
+        public override string ToString()
+        {
+            return fn + "," + ln + "," + email + "," + phone;
+        }
     }
+
+   
 }

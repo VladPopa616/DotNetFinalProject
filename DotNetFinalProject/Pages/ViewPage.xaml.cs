@@ -20,9 +20,18 @@ namespace DotNetFinalProject.Pages
     /// </summary>
     public partial class ViewPage : Page
     {
-        public ViewPage()
+        Contact contact;
+        public ViewPage(Contact contact)
         {
             InitializeComponent();
+            this.contact = contact;
+            FirstNameBox.Text = contact.fn;
+            LastNameBox.Text = contact.ln;
+            EmailBox.Text = contact.email;
+            PhoneBox.Text = contact.phone;
+
         }
+
+        
     }
 }

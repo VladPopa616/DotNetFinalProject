@@ -10,25 +10,15 @@
 
     <Grid Background="White">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
+        <StackPanel Margin="10">
 
-        <!--Labels-->
-        <Label Grid.Row="0" Content="CLICK TO VIEW A CONTACT" Style="{StaticResource labelTitle}"/>
-        <ScrollViewer Grid.Row="1">
-            <StackPanel>
-                <Button Content="Text"/>
-                <Button Content="Text"/>
-                <Button Content="Text"/>
-                <Button Content="Text"/>
+            <Label Content="Contact List" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock x:Name="FirstNameBox" Width="300" FontSize="32" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="LastNameBox" Width="300" FontSize="32" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="EmailBox" Width="300" FontSize="32" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="PhoneBox" Width="300" FontSize="32" HorizontalAlignment="Center"/>
 
-            </StackPanel>
-        </ScrollViewer>
+        </StackPanel>
 
-        <!--Input-->
-
-        <!--Button-->
     </Grid>
 </Page>
