@@ -37,10 +37,32 @@ namespace DotNetFinalProject
             //}
             //MessageBox.Show("Hello!", "First MessageBox", MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Home_Click(object sender, RoutedEventArgs e)
         {
+            Pages.MainPage mainPage = new Pages.MainPage();
+            Frame1.Navigate(mainPage);
+        }
 
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.AddPage addWindow = new Pages.AddPage();
+            Frame1.Navigate(addWindow);
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.DeletePage deletePage = new Pages.DeletePage();
+            Frame1.Navigate(deletePage);
+        }
+        private void List_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.ViewPage viewPage = new Pages.ViewPage();
+            Frame1.Navigate(viewPage);
+        }
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.UpdatePage updatePage = new Pages.UpdatePage();
+            Frame1.Navigate(updatePage);
         }
     }
 }
