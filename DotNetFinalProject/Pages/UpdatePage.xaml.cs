@@ -37,7 +37,7 @@ namespace DotNetFinalProject.Pages
             //1. Take the text input
 
             //2. Message Box pops up
-            MessageBox.Show( "First name: " + TextBox)
+            
             //3. Enter fields, if empty keep to default.
             
             //4. Save fields
