@@ -79,9 +79,27 @@ namespace DotNetFinalProject
             }
         }
 
-        public void DeleteContacts(Contact contact)
+        public void DeleteContacts(List<Contact> contacts)
         {
+            foreach(Contact contact in contacts)
+            {
+                using(var con = new SqlConnection(CON_STRING))
+                {
+                    var query = "delete from contacts where FirstName=@FirstName and LastName=@LastName and Email=@Email and Phone=@Phone";
+                    using (var cmd = new SqlCommand(query, con))
+                    {
+                       
 
+                        cmd.Parameters.AddWithValue("@FirstName", contact.fn);
+                        cmd.Parameters.AddWithValue("@LastName", contact.ln);
+                        cmd.Parameters.AddWithValue("@Email", contact.email);
+                        cmd.Parameters.AddWithValue("@Phone", contact.phone);
+                        
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
         }
 
        
