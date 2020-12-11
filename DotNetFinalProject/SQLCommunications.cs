@@ -62,7 +62,21 @@ namespace DotNetFinalProject
 
         public void UpdateContacts(Contact contact)
         {
+            using(var con = new SqlConnection(CON_STRING))
+            {
+                var query = "UPDATE Contact SET FirstName=@FirstName, LastName=@LastName, Email=@Email, Phone=@Phone";
+                using(var cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
 
+                    cmd.Parameters.AddWithValue("@FirstName", contact.fn);
+                    cmd.Parameters.AddWithValue("@LastName", contact.ln);
+                    cmd.Parameters.AddWithValue("@Email", contact.email);
+                    cmd.Parameters.AddWithValue("@Phone", contact.phone);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         public void DeleteContacts(Contact contact)
