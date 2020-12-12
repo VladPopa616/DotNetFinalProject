@@ -7,9 +7,26 @@ using System.Threading.Tasks;
 
 namespace DotNetFinalProject
 {
-    public class SQLCommunications
+    public sealed class SQLCommunications
     {
         private const string CON_STRING = @"data source=localhost\SQLEXPRESS2;database = Contact;Trusted_Connection=True";
+
+        private SQLCommunications()
+        {
+
+        }
+
+        static readonly SQLCommunications instance = new SQLCommunications();
+
+        public static SQLCommunications Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+            
+
         public void AddContacts(Contact contact)
         {
             using (var con = new SqlConnection(CON_STRING))
