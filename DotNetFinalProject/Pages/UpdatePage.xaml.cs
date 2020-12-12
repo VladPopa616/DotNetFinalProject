@@ -20,27 +20,25 @@ namespace DotNetFinalProject.Pages
     /// </summary>
     public partial class UpdatePage : Page
     {
-        string input;
+        SQLCommunications sql = SQLCommunications.Instance;
         public UpdatePage()
         {
             InitializeComponent();
         }
 
-        private void MyTextBox_Change (object sender, TextChangedEventArgs e)
+        
+
+
+        private void ConfirmUpdateClick(object sender, RoutedEventArgs e)
         {
-            input = MyTextBox.Text;
-        }
+            Contact contact = new Contact(Id.Content, FnInput.Text, LnInput.Text, emailInput.Text, phoneInput.Text);
 
+            contact.fn = FnInput.Text.ToString();
+            contact.ln = LnInput.Text.ToString();
+            contact.email = emailInput.Text.ToString();
+            contact.phone = phoneInput.Text.ToString();
 
-        private void UpdateContact_Click (object sender, RoutedEventArgs e)
-        {
-            //1. Take the text input
-
-            //2. Message Box pops up
-            
-            //3. Enter fields, if empty keep to default.
-            
-            //4. Save fields
+            sql.UpdateContacts(contact);
         }
 
 

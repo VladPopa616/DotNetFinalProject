@@ -38,7 +38,7 @@
         <TextBox x:Name="emailInput" Height="auto" Width="auto" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontSize="40" Margin="9.8,5.6,19.6,9.8"/>
         <TextBox x:Name="phoneInput" Height="auto" Width="auto" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" FontSize="40" Margin="9.8,5.6,19.6,9.8"/>
 
-        <Button x:Name="ConfirmUpdate" Background="Blue" Grid.Row="6" Grid.ColumnSpan="2" Content="Update Contact" FontSize="40" FontWeight="Bold"/> 
+        <Button x:Name="ConfirmUpdate" Background="Blue" Grid.Row="6" Grid.ColumnSpan="2" Content="Update Contact" FontSize="40" FontWeight="Bold" Click="ConfirmUpdateClick"/> 
 
 
 
